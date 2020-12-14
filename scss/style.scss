@@ -1,0 +1,174 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "generic";
+@import "header";
+@import "mobile_menu";
+@import "footer";
+
+/* main */
+
+.about__frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &-maintitle {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+
+    @include breakpoint(medium) {
+      font-weight: 500;
+      font-size: 32px;
+    }
+  }
+
+  &-text {
+    width: 925px;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 147.3%;
+
+    @include breakpoint(medium) {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 147.3%;
+    }
+  }
+}
+
+.contact__frame {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+    @include breakpoint(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+  }
+  &-item {
+    width: 254px;
+    text-align: center;
+    margin: 0 5%;
+
+    @include breakpoint(medium) {
+      padding-top: 20px;
+    }
+  }
+  &-title {
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    color: $grey2;
+
+    @include breakpoint(medium) {
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+  &-info {
+    font-weight: normal;
+    font-size: 20px;
+
+    @include breakpoint(medium) {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+
+.team__frame {
+  &-wrapper {
+    width: 68%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      width: auto;
+    }
+  }
+
+  &-item {
+    @include breakpoint(medium) {
+      padding-top: 30px;
+    }
+  }
+
+  &-itemup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 55px;
+
+    @include breakpoint(medium) {
+      padding-top: 0;
+    }
+
+    &-first {
+      width: 442px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include breakpoint(medium) {
+        justify-content: space-around;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-wrapperdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-itemdown {
+    width: 442px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    @include breakpoint(medium) {
+      justify-content: space-around;
+      padding-top: 0;
+      padding-bottom: 60px;
+    }
+  }
+
+  &-name {
+    padding-top: 23px;
+    font-weight: 500;
+    font-size: 20px;
+
+    @include breakpoint(medium) {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  &-work {
+    padding-top: 8px;
+    color: $grey3;
+    font-weight: normal;
+    font-size: 14px;
+
+    @include breakpoint(medium) {
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+}

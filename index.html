@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilldrive</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="content__container">
+        <div class="content__wrapper">
+            <div class="content__wrapper-item">
+                <a class="content__logo" href="https://yandex.ru/">SkillDrive</a>  
+            </div>
+            <div class="content__wrapper-item is-desktop">
+                <nav class="menu__frame">
+                    <div class="menu__frame-link is-animated" data-target="about" >О нас</div>
+                    <div class="menu__frame-link is-animated" data-target="contact">Условия</div>
+                    <div class="menu__frame-link is-animated" data-target="team">Частые вопросы</div>
+                </nav>
+            </div>
+            <div class="content__wrapper-item is-desktop">
+                <button class="content-button is-animated"><span class="content-button-text">Войти</span></button>
+            </div>
+            <div class="mobile__burger is-mobile">
+                <div class="mobile__burger-item"></div>
+                <div class="mobile__burger-item"></div>
+                <div class="mobile__burger-item"></div>
+            </div>
+        </div>
+        <div class="menu__mobile is-mobile is-animeted">
+            <div class="menu__mobile-header">
+                <div class="menu__mobile-item">
+                    <a class="content__logo" href="https://yandex.ru/">SkillDrive</a>
+                </div>
+                <div class="menu__mobile-close"><img src="./img/menu_close.svg" alt=""></div>
+            </div>
+            <div class="menu__mobile-frame">
+                <nav>
+                    <div class="menu__mobile-link is-animated is-active" >О нас</div>
+                    <div class="menu__mobile-link is-animated" >Условия</div>
+                    <div class="menu__mobile-link is-animated" >Частые вопросы</div>
+                </nav>
+            </div>
+                <div class="menu__mobile-button">
+                    <button class="menu__mobile-but is-animated"><span class="content-button-text">Войти</span></button>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="about__frame" id="section-about">
+            <div class="content__container is-aline-center">
+                <img src="./img/img.svg" alt="main image" class="is-desktop">
+                <img src="./img/imgmobile.svg" alt="main image" class="is-mobile">
+                <h1 class="about__frame-maintitle">О нас</h1>
+                    <div class="about__frame-text is-desktop">
+                        <p>Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего живого веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но и сдавать их в аренду.</p>
+                    </div>
+                    <div class="about__frame-text is-mobile">
+                        <p>Это учебный проект, созданный с целью получения боевого опыта в разработке  настоящего живого веб-приложения.
+                            Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но и сдавать их в
+                            аренду.</p>
+                    </div>
+            </div>
+        </section>
+        <section class="contact__frame is-grey" id="section-contact">
+            <div class="content__container">
+                    <h2>Контакты</h2>
+                        <div class="contact__frame-wrapper">
+                            <div class="contact__frame-item">
+                                <div class="contact__frame-title">Электронная почта</div>
+                                <div class="contact__frame-info"><a href="drive@skillfactory.com">drive@skillfactory.com</a></div>
+                            </div>
+                            
+                            <div class="contact__frame-item">
+                                <div class="contact__frame-title">Телефон</div>
+                                <div class="contact__frame-info"><a href="+7 912 123-45-67">+ 7 912 123-45-67</a></div>
+                            </div>
+                        </div>
+                    <div class="contact__frame-line"></div>
+                </div>
+            </section>
+        <section class="team__frame" id="section-team">
+            <div class="content__container "> 
+                <h2>Команда</h2>
+                <div class="team__frame-wrapper">
+                    <div class="team__frame-itemup">
+                     <div class="team__frame-itemup-first">  
+                        <div class="team__frame-item">
+                            <img src="./Team photo/ivan_ivanov.svg" alt="Ivan Ivanov photo" class="is-desktop">
+                            <img src="./Team photo mobile/ivan_ivanov.svg" alt="Ivan Ivanov photo" class="is-mobile">
+                            <div class="team__frame-name">Иван Иванов</div>
+                            <div class="team__frame-work">CEO</div>
+                        </div>
+                        <div class="team__frame-item">
+                            <img src="./Team photo/alex_smirn.svg" alt="Alex Smirnov" class="is-desktop">
+                            <img src="./Team photo mobile/alex_smirn.svg" alt="Alex Smirnov" class="is-mobile">
+                            <div class="team__frame-name">Алексей Смирнов</div>
+                            <div class="team__frame-work">Frontend-разраотчик</div>
+                        </div>
+                    </div >
+                    <div class="team__frame-itemup-first">
+                        <div class="team__frame-item">
+                            <img src="./Team photo/den_yarz.svg" alt="Den Yarcev" class="is-desktop">
+                            <img src="./Team photo mobile/den_yarz.svg" alt="Den Yarcev" class="is-mobile">
+                            <div class="team__frame-name">Денис Ярцев</div>
+                            <div class="team__frame-work">Backend-разработчик</div>
+                        </div>
+                        <div class="team__frame-item">
+                            <img src="./Team photo/nik_moroz.svg" alt="Nik Morozov" class="is-desktop">
+                            <img src="./Team photo mobile/nik_moroz.svg" alt="Nik Morozov" class="is-mobile">
+                            <div class="team__frame-name">Николай Морозов</div>
+                            <div class="team__frame-work">Дизайнер</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="team__frame-wrapperdown">
+                    <div class="team__frame-itemdown">
+                        <div class="team__frame-item">
+                            <img src="./Team photo/irina_deeva.svg" alt="Irina Deeva" class="is-desktop">
+                            <img src="./Team photo mobile/irina_deeva.svg" alt="Irina Deeva" class="is-mobile">
+                            <div class="team__frame-name">Ирина Деева</div>
+                            <div class="team__frame-work">Копирайтер</div>
+                        </div>
+                        <div class="team__frame-item">
+                            <img src="./Team photo/mari_strelkova.svg" alt="Mriya Strelnikova" class="is-desktop">
+                            <img src="./Team photo mobile/mari_strelkova.svg" alt="Mriya Strelnikova" class="is-mobile">
+                            <div class="team__frame-name">Мария Стрелкова</div>
+                            <div class="team__frame-work">SMM</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+    <footer class="footer__frame">
+        <div class="content__container">
+            <div class="footer__frame-wrapper">
+                <div>
+                <img class="footer__frame-copyright" src="./img/copyright.svg" alt="">
+                </div>
+                <div class="footer__frame-socmedia">
+                    <div>
+                        <a class="footer__frame-item"
+                        href="https://www.instagram.com/skilldriveorg/?hl=ru"
+                        aria-label="You can find vk profile here">
+                        <img src="./img/vk_icon.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="footer__frame-item"
+                        href="https://www.instagram.com/skilldriveorg/?hl=ru"
+                        aria-label="You can find instagram profile here">
+                        <img src="./img/instagram_icon.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="footer__frame-item"
+                        href="https://www.instagram.com/skilldriveorg/?hl=ru"
+                        aria-label="You can find facebook profile here">
+                        <img src="./img/facebook_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

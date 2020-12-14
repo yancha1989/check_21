@@ -1,0 +1,37 @@
+/* footer */
+
+footer {
+  background: $purple;
+  &.footer__frame-wrapper {
+    display: flex;
+  }
+}
+
+.footer__frame {
+  padding: 52px 0;
+
+  @include breakpoint(medium) {
+    padding: 30px 0;
+  }
+
+  &-wrapper {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    @include breakpoint(medium) {
+      flex-direction: column;
+    }
+  }
+  &-socmedia {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+
+    @include breakpoint(medium) {
+      padding-top: 16.5px;
+    }
+  }
+}
